@@ -1,0 +1,179 @@
+/* Start: Paul Irish Box Model */
+* {
+    box-sizing: border-box;
+}
+
+*, *:before, *::after {
+    box-sizing: inherit;
+}
+/* End: Box Model */
+
+/* Start: Google latin-ext */
+@font-face {
+  font-family: 'Kaushan Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Kaushan Script'), local('KaushanScript-Regular'), url(/fonts/qx1LSqts-NtiKcLw4N03IO87R-l0-Xx_7cYc0ZX1ifE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Kaushan Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Kaushan Script'), local('KaushanScript-Regular'), url(/fonts/qx1LSqts-NtiKcLw4N03IEd0sm1ffa_JvZxsF_BEwQk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* End: Google Latin */
+
+html {
+    font-family: Arial, Helvetica, "Lucida Sans", sans-serif;
+}
+
+body {
+    display: grid;
+    background-image: url("/images/Apache_PoweredBy.svg"),
+                      url("/images/CentOS_Graphical_Symbol.svg");
+    background-repeat: no-repeat;
+    background-position: left top, right top;
+    background-size: 5rem, 5rem;
+    margin: 2% auto;
+    font-weight: bold;
+    background-color: #190623;
+}
+
+a, h1, footer {
+    color: #EA4CA5;
+    text-align: center;
+    font-weight: bold;
+}
+
+a {
+    font-family: 'Kaushan Script', cursive;
+}
+
+h1 {
+    margin: 2rem 0 1rem 0;
+}
+
+h2, h3 {
+    margin: .1rem;
+}
+nav {
+    text-align: center;
+}
+
+ul li {
+    margin: .4rem;
+}
+
+.aPng {
+    box-shadow: .1rem .3rem .5rem .2rem #f5b4b4;
+}
+
+a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    box-shadow: 0 1rem 0.7rem -1rem whitesmoke;
+}
+
+a:hover {
+    background-color: #282828;
+    color: papayaWhip;
+}
+
+li a:hover {
+    box-shadow: .1rem .3rem .5rem .2rem #eab358;
+}
+
+figure {
+    display: inline-block;
+}
+figure a:hover {
+    box-shadow: .1rem .3rem .5rem .2rem #eab358;
+}
+
+figcaption {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: .2rem 0;
+}
+
+a:focus {
+    /* To give a little highlight on active elements */
+    border-color: #de00ff;
+}
+
+article {
+    text-align: center;
+}
+
+footer {
+    margin: .2rem;
+}
+
+p {
+    margin: 0;
+}
+
+.harvard {
+    color: #bcbb6d;
+}
+
+.img10 {
+    width: 11rem;
+}
+
+.img14 {
+    width: 14rem;
+}
+
+/* Grid Box Layout staring here */
+.gridBox {
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.ulListStyle {
+    list-style-type: none;
+    padding: 0;
+}
+
+.superScript {
+    vertical-align: super;
+    color: #190623;
+    background-color: #ecb9b1;
+    font-weight: bold;
+}
+
+/* responsive design values */
+@media (min-width: 1px) and (max-width: 440px) {
+    body {
+        background-size: 5rem, 5rem, 5rem, 5rem;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 768px) {
+    body {
+        background-size: 5rem, 5rem, 10rem, 10rem;
+    }
+}
+
+@media (min-width: 361px) and (max-width: 414px) {
+    header {
+        margin: 5%;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+
+    a {
+        font-size: .9rem;
+    }
+
+}

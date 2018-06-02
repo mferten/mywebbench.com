@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+# MFE (my) Main Site Front Page
+Route::get('/', 'MyWeb\MyWebController@index');
