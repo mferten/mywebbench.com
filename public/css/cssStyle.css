@@ -125,10 +125,6 @@ p {
     width: 28rem;
 }
 
-.img6 {
-    width: 6rem;
-}
-
 /* Grid Box Layout staring here */
 .gridBox {
     display: grid;
@@ -155,11 +151,17 @@ p {
     body {
         background-size: 5rem, 5rem, 5rem, 5rem;
     }
+    .img28 {
+        width: 14rem;
+    }
 }
 
 @media (min-width: 401px) and (max-width: 768px) {
     body {
         background-size: 5rem, 5rem, 10rem, 10rem;
+    }
+    .img28 {
+        width: 14rem;
     }
 }
 
@@ -175,5 +177,7 @@ p {
     a {
         font-size: .9rem;
     }
-
+    .img28 {
+        width: 14rem;
+    }
 }
