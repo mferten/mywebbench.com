@@ -28,11 +28,11 @@
             <nav>
                 <ul class="ulListStyle">
                     <li>
-                        <a href="https://www.mfeweb.com" target="_blank">&nbsp;M.F.E Sites&nbsp;</a>
-                        <a href="http://www.mfework.com" target="_blank">&nbsp;Vegan&nbsp;</a>
-                        <a href="http://www.mfeworld.com/citations" target="_blank">&nbsp;Citations&nbsp;</a>
-                        <a href="https://github.com/mferten" target="_blank">&nbsp;GitHub&nbsp;</a>
-                        <a href="https://www.mfeweb.com/mail" target="_blank">&nbsp;Mail&nbsp;</a>
+                        <a class='harvard' href="https://www.mfeweb.com" target="_blank">&nbsp;M.F.E Sites&nbsp;</a>
+                        <a class='harvard' href="http://www.mfework.com" target="_blank">&nbsp;Vegan&nbsp;</a>
+                        <a class='harvard' href="http://www.mfeworld.com/citations" target="_blank">&nbsp;Citations&nbsp;</a>
+                        <a class='harvard' href="https://github.com/mferten" target="_blank">&nbsp;GitHub&nbsp;</a>
+                        <a class='harvard' href="https://www.mfeweb.com/mail" target="_blank">&nbsp;Mail&nbsp;</a>
                     </li>
                 </ul>
             </nav>
