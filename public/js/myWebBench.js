@@ -20,7 +20,7 @@ function startUp()
     function setCarouselImage()
     {
         // if the last one, loop from the first one
-        if (currentCarouselImage == 17) // *** This will be updated anytime a new photo added
+        if (currentCarouselImage == 23) // *** This will be updated anytime a new photo added
         {
             currentCarouselImage = 1; // array starts with 0
         }
@@ -30,5 +30,5 @@ function startUp()
         }
         console.log("images/IMG" + currentCarouselImage + ".JPG");
         document.getElementById("picture").src="images/IMG" + currentCarouselImage + ".JPG";
-    }    
+    }
 }

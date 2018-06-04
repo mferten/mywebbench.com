@@ -31,7 +31,7 @@
                     <span class="harvard">Set </span>
                 </li>
                 <li>
-                    <a href="http://www.magensbayauthority.com/" target="_blank">&nbsp;An Aruba Behind Megans Bay&nbsp;</a>
+                    <a href="http://www.magensbayauthority.com/" target="_blank">&nbsp;Aruba Type Resorts Behind Megans Bay&nbsp;</a>
                 </li>
                 <li>
                     <span class="harvard">Ongoing </span>
