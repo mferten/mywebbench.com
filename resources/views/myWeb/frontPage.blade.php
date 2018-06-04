@@ -2,11 +2,11 @@
 @push('header')
 <!-- place holder -->
         <header>
-            <h1>USVI St. Thomas must be a Cheerful Paradise</h1>
+            <h1>USVI St. Thomas Should Be A Cheerful Paradise</h1>
             <figure>
                 <a href="images/IMG1.JPG" target="_blank">
-                    <img class="img28 aPng" src="images/IMG1.JPG"
-                        alt="2017 Lift Photo"/>
+                    <img id="picture" class="img28 aPng" src="images/IMG1.JPG"
+                        alt="St. Thomas Photo"/>
                 </a>
             </figure>
         </header>
@@ -14,19 +14,13 @@
 @push('module')
 <!-- place holder -->
         <main>
-            <h2 class='harvard'>Get the Food and the Resorts</h2>
-            <figure>
-                <figcaption><p class='harvard'>Food</p></figcaption>
-                <a href="" target="_blank">
-                    <img class="img10 aPng" src="images/"
-                        alt="Get Whole Foods and/or COSTCO"/>
-                </a>
-                <figcaption><p class='harvard'>Get an Aruba just Behind Megan Bay</p></figcaption>
-                <a href="" target="_blank">
-                    <img class="img10 aPng" src="images/"
-                        alt="Get an Aruba behind Megan Bay"/>
-                </a>
-            </figure>
+            <ul class="ulListStyle">
+                <li>
+                    <span class="harvard">invite </span><a href="https://www.wholefoodsmarket.com/" target="_blank">&nbsp;Whole Foods&nbsp;</a>
+                    <span class="harvard">invite </span><a href="https://www.costco.com/" target="_blank">&nbsp;COSTCO&nbsp;</a>
+                    <span class="harvard">and </span><a href="http://www.magensbayauthority.com/" target="_blank">&nbsp;Set An Aruba Behind Megans Bay&nbsp;</a>
+                </li>
+            </ul>
         </main>
 @endpush
 
