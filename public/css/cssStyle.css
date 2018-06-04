@@ -113,11 +113,15 @@ p {
     margin: 0;
 }
 
-.harvard, .harvardMagnify {
+.harvard {
     color: #bcbb6d;
 }
 
 .harvardMagnify {
+   font-size: 5rem;
+}
+
+.harvardMagnifyMinus {
    font-size: 8rem;
 }
 
