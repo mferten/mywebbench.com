@@ -68,12 +68,6 @@ ul li {
     margin: .4rem;
 }
 
-.aPng {
-    box-shadow: .1rem .3rem .5rem .2rem #f5b4b4;
-    margin: 1rem;
-    padding: .6rem;
-}
-
 a {
     font-size: 1.5rem;
     text-decoration: none;
@@ -119,12 +113,22 @@ p {
     margin: 0;
 }
 
-.harvard {
+.harvard, .harvardMagnify {
     color: #bcbb6d;
 }
 
+.harvardMagnify {
+   font-size: 8rem;
+}
+
 .img20 {
-    width: 20rem;
+    width: 320px;
+}
+
+.aPng {
+    box-shadow: .1rem .3rem .5rem .2rem #f5b4b4;
+    margin: 1rem;
+    padding: .6rem;
 }
 
 /* Grid Box Layout staring here */
