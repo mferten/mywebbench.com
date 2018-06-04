@@ -31,6 +31,7 @@ function startUp()
             currentCarouselImage++;
         }
         document.getElementById("picture").src="images/IMG" + currentCarouselImage + ".JPG";
+        document.getElementById("pictureA").href="images/IMG" + currentCarouselImage + ".JPG";
     }
 }
 

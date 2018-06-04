@@ -5,7 +5,7 @@
             <h1>USVI St. Thomas Should Be A Cheerful Paradise</h1>
             <figure>
                 <span id="decrease" class="harvard harvardMagnifyMinus">&nbsp;-&nbsp;</span>
-                <a href="images/IMG1.JPG" target="_blank">
+                <a id="pictureA" href="images/IMG1.JPG" target="_blank">
                     <img id="picture" class="img20 aPng" src="images/IMG1.JPG"
                         alt="St. Thomas Photo"/>
                 </a>
