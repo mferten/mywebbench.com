@@ -115,7 +115,7 @@ p {
 
 /* DGMD E-20 Wiki */
 [href*=".pdf"] {
-	padding: 20px;
+	padding-right: 20px;
 	background: url(/images/pdf.gif) no-repeat right;
 }
 
@@ -163,7 +163,7 @@ p {
 }
 
 /* responsive design values */
-@media (min-width: 1px) and (max-width: 440px) {
+@media (min-width: 1px) and (max-width: 480px) {
     body {
         background-size: 5rem, 5rem, 5rem, 5rem;
     }
@@ -172,7 +172,7 @@ p {
     }
 }
 
-@media (min-width: 401px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
     body {
         background-size: 5rem, 5rem, 10rem, 10rem;
     }
