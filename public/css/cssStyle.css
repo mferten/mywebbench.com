@@ -113,6 +113,12 @@ p {
     margin: 0;
 }
 
+/* DGMD E-20 Wiki */
+[href*=".pdf"] {
+	padding: 20px;
+	background: url(/images/pdf.gif) no-repeat right;
+}
+
 .harvard {
     color: #bcbb6d;
 }

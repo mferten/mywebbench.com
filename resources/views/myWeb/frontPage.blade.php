@@ -2,7 +2,7 @@
 @push('header')
 <!-- place holder -->
         <header>
-            <h1>USVI St. Thomas Should Be A Cheerful Paradise</h1>
+            <h1>USVI St. Thomas Should Be a Cheerful Paradise! <a  class="harvard" href="docs/whyCheerfulParadise.docx" target="_blank">Why?&nbsp;</a></h1>
             <figure>
                 <span id="decrease" class="harvard harvardMagnifyMinus">&nbsp;-&nbsp;</span>
                 <a id="pictureA" href="images/IMG1.JPG" target="_blank">
