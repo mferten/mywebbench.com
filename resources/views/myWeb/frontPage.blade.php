@@ -37,7 +37,7 @@
                     <span class="harvard">Ongoing </span>
                 </li>
                 <li>
-                    <a href="http://www.magensbayauthority.com/" target="_blank">&nbsp;Solar Energy: Roads, Buildings and Beautification&nbsp;</a>
+                    <a href="https://www.eia.gov/state/analysis.php?sid=VQ" target="_blank">&nbsp;Solar Energy: Roads, Buildings and Beautification&nbsp;</a>
                 </li>
             </ul>
         </main>
