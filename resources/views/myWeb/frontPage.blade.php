@@ -4,12 +4,12 @@
         <header>
             <h1>USVI St. Thomas Should Be a Cheerful Paradise! <a  class="harvard" href="docs/whyCheerfulParadise.docx" target="_blank">Why?&nbsp;</a></h1>
             <figure>
-                <span id="decrease" class="harvard harvardMagnifyMinus">&nbsp;-&nbsp;</span>
+                <span id="decrease" class="harvard harvardMagnifyMinus displayType">&nbsp;-&nbsp;</span>
                 <a id="pictureA" href="images/IMG1.JPG" target="_blank">
                     <img id="picture" class="img20 aPng" src="images/IMG1.JPG"
                         alt="St. Thomas Photo"/>
                 </a>
-                <span id="increase" class="harvard harvardMagnify">&nbsp;+&nbsp;</span>
+                <span id="increase" class="harvard harvardMagnify displayType">&nbsp;+&nbsp;</span>
             </figure>
         </header>
 @endpush

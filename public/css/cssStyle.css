@@ -162,13 +162,20 @@ p {
     font-weight: bold;
 }
 
+.displayType {
+    display: inline;
+}
+
 /* responsive design values */
 @media (min-width: 1px) and (max-width: 480px) {
     body {
         background-size: 5rem, 5rem, 5rem, 5rem;
     }
     .img20 {
-        width: 192px;
+        width: 160px;
+    }
+    .displayType {
+        display: none;
     }
 }
 
@@ -178,6 +185,10 @@ p {
     }
     .img20 {
         width: 192px;
+    }
+
+    .displayType {
+        display: none;
     }
 }
 
@@ -194,6 +205,9 @@ p {
         font-size: .9rem;
     }
     .img20 {
-        width: 192px;
+        width: 160px;
+    }
+    .displayType {
+        display: none;
     }
 }
