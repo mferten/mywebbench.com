@@ -18,25 +18,20 @@
         <main>
             <ul class="ulListStyle">
                 <li>
-                    <span class="harvard">Invite </span>
+                    <h2 class="harvard">Invite </h2>
                 </li>
                 <li>
                     <a href="https://www.wholefoodsmarket.com/" target="_blank">&nbsp;Whole Foods&nbsp;&nbsp;</a>
-                </li>
-                <li>
-                    <span class="harvard">Invite </span>
-                </li>
-                <li>
                     <a href="https://www.costco.com/" target="_blank">&nbsp;COSTCO&nbsp;&nbsp;</a>
                 </li>
                 <li>
-                    <span class="harvard">Set </span>
+                    <h2 class="harvard">Set </h2>
                 </li>
                 <li>
                     <a href="http://www.magensbayauthority.com/" target="_blank">&nbsp;Aruba Type Resorts Behind Megans Bay&nbsp;</a>
                 </li>
                 <li>
-                    <span class="harvard">Ongoing </span>
+                    <h2 class="harvard">Ongoing </h2>
                 </li>
                 <li>
                     <a href="https://www.eia.gov/state/analysis.php?sid=VQ" target="_blank">&nbsp;Solar Energy: Roads, Buildings and Beautification&nbsp;</a>
