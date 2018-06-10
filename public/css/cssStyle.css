@@ -174,7 +174,8 @@ p {
         background-size: 5rem, 5rem, 5rem, 5rem;
     }
     .img20 {
-        width: 160px;
+        width: 10rem;
+        height: 8rem;
     }
     .displayType {
         display: none;
@@ -186,7 +187,8 @@ p {
         background-size: 5rem, 5rem, 10rem, 10rem;
     }
     .img20 {
-        width: 192px;
+        width: 12rem;
+        height: 9rem;
     }
 
     .displayType {
@@ -208,7 +210,8 @@ p {
     }
 
     .img20 {
-        width: 160px;
+        width: 10rem;
+        height: 8rem;
     }
 
     .displayType {
