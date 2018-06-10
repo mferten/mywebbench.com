@@ -41,11 +41,11 @@ function startUp()
     this.addEventListener("click", clickEvents, false);
     // image count
     var currentCarouselImage = 0; // if 0 is not assigned: It becomes "undefined" and NaN in setCarouselImage function.
+    var startStopButton = document.getElementById("startOrStop");
     // set the first Image
     setCarouselImage();
-    // set next picture of this Real Estate or Resort (Carousel) every 2.5 seconds
+    // Start Photo Carousel
     var runningCarousel = setInterval(setCarouselImage, 4500);
-    document.getElementById("start").disabled = true;
     // Rotate the Photos
     function setCarouselImage()
     {
@@ -58,10 +58,14 @@ function startUp()
         {
             currentCarouselImage++;
         }
+        /*
         document.getElementById("picture").src="images/IMG" + currentCarouselImage + ".JPG";
         document.getElementById("pictureA").href="images/IMG" + currentCarouselImage + ".JPG";
         // this is a hard-coded array for now: imageTexts. if evolves it will be retrieved from the database
         document.getElementById("imageText").innerHTML=locations[currentCarouselImage-1];
+        */
+        showAPhoto();
+        startStopButton.innerHTML="Stop";
     }
 
     /* a Flag is Selected: The Search starts */
@@ -79,20 +83,51 @@ function startUp()
             // "-" Decrease the Size
             changeTheSize("-");
         }
-        else if (event.target.id == "stop")
+        else if (event.target.id == "startOrStop")
         {
-            // Stop the "picture carousel"
-            clearInterval(runningCarousel);
-            runningCarousel = "";
-            document.getElementById("start").disabled = false;
-            document.getElementById("stop").disabled = true;
+            if (startStopButton.src.indexOf("images/pause.png") != -1)
+            {
+                // Stop the "picture carousel"
+                clearInterval(runningCarousel);
+                runningCarousel = "";
+                startStopButton.src="images/play.png"
+                document.getElementById("next").classList.remove("displayNone");
+                document.getElementById("previous").classList.remove("displayNone");
+            }
+            else
+            {
+                // Start the "picture carousel"
+                runningCarousel = setInterval(setCarouselImage, 4500);
+                startStopButton.src="images/pause.png"
+                document.getElementById("next").classList.add("displayNone");
+                document.getElementById("previous").classList.add("displayNone");
+            }
         }
-        else if (event.target.id == "start")
+        else if (event.target.id == "next")
         {
-            // Start the "picture carousel"
-            runningCarousel = setInterval(setCarouselImage, 4500);
-            document.getElementById("start").disabled = true;
-            document.getElementById("stop").disabled = false;
+            // go to the next Photo: ++ if the last one start again 1
+            if (currentCarouselImage == 27) // *** This will be updated anytime a new photo added
+            {
+                currentCarouselImage = 1; // array starts with 0
+            }
+            else
+            {
+                currentCarouselImage++;
+            }
+            showAPhoto();
+        }
+        else if (event.target.id == "previous")
+        {
+            // go to the previous Photo: -- if the First one, go to the last 27
+            if (currentCarouselImage == 1) // *** This will be updated anytime a new photo added
+            {
+                currentCarouselImage = 27; // array starts with 0
+            }
+            else
+            {
+                currentCarouselImage--;
+            }
+            showAPhoto();
         }
     }
 
@@ -109,4 +144,13 @@ function startUp()
         else
             document.getElementById("picture").width = document.getElementById("picture").width - 48;
     }
+
+    function showAPhoto()
+    {
+        document.getElementById("picture").src="images/IMG" + currentCarouselImage + ".JPG";
+        document.getElementById("pictureA").href="images/IMG" + currentCarouselImage + ".JPG";
+        // this is a hard-coded array for now: imageTexts. if evolves it will be retrieved from the database
+        document.getElementById("imageText").innerHTML=locations[currentCarouselImage-1];
+    }
+
 }

@@ -119,16 +119,13 @@ p {
 	background: url(/images/pdf.gif) no-repeat right;
 }
 
+.twoRems {
+    width: 3rem;
+    height: 3rem;
+}
+
 .harvard {
     color: #bcbb6d;
-}
-
-.harvardMagnify {
-   font-size: 5rem;
-}
-
-.harvardMagnifyMinus {
-   font-size: 8rem;
 }
 
 .img20 {
@@ -164,6 +161,10 @@ p {
 
 .displayType {
     display: inline;
+}
+
+.displayNone {
+    display: none;
 }
 
 /* responsive design values */
@@ -204,9 +205,11 @@ p {
     a {
         font-size: .9rem;
     }
+
     .img20 {
         width: 160px;
     }
+
     .displayType {
         display: none;
     }
