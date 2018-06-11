@@ -136,13 +136,22 @@ function startUp()
     {
         if (document.getElementById("picture").classList.contains("img20"))
         {
+            var width = document.getElementById("picture").width;
+            var height = document.getElementById("picture").height;
             document.getElementById("picture").classList.remove("img20");
-            document.getElementById("picture").width = "320";
+            document.getElementById("picture").width = width;
+            document.getElementById("picture").height = height;
         }
         if (what == "+")
-            document.getElementById("picture").width = document.getElementById("picture").width + 48;
+        {
+            document.getElementById("picture").width += 48;
+            document.getElementById("picture").height += 48;
+        }
         else
-            document.getElementById("picture").width = document.getElementById("picture").width - 48;
+        {
+            document.getElementById("picture").width -= 48;
+            document.getElementById("picture").height -= 48;
+        }
     }
 
     function showAPhoto()
