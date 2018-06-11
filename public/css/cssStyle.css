@@ -29,6 +29,7 @@
 
 html {
     font-family: Arial, Helvetica, "Lucida Sans", sans-serif;
+    overflow-y: scroll;
 }
 
 body {
@@ -86,6 +87,7 @@ li a:hover {
 figure {
     display: inline-block;
 }
+
 figure a:hover {
     box-shadow: .1rem .3rem .5rem .2rem #eab358;
 }

@@ -4,16 +4,16 @@
         <header>
             <h1>Let's Make USVI St. Thomas A Cheerful Paradise <a class="harvard" href="docs/whyCheerfulParadise.jpg" target="_blank">How?&nbsp;</a></h1>
             <figure>
-                <figcaption id="imageText" class="harvard">Where is this place and why it is special?</figcaption>
                 <img id="previous" class="twoRems displayNone" src="images/previous.png" alt="Previous Photo"/>
-                <img id="startOrStop" class="twoRems" src="images/pause.png" alt="Stop Carousel"/>
                 <img id="decrease" class="twoRems displayType" src="images/decrease.png" alt="Decrease Photo Size"/>
+                <img id="startOrStop" class="twoRems" src="images/pause.png" alt="Stop Carousel"/>
+                <img id="increase" class="twoRems displayType" src="images/increase.png" alt="Increase Photo Size"/>
+                <img id="next" class="twoRems displayNone" src="images/next.png" alt="Next Photo"/>
+                <figcaption id="imageText" class="harvard">Where is this place and why it is special?</figcaption>
                 <a id="pictureA" href="images/IMG1.JPG" target="_blank">
                     <img id="picture" class="img20 aPng" src="images/IMG1.JPG"
                         alt="St. Thomas Photo"/>
                 </a>
-                <img id="increase" class="twoRems displayType" src="images/increase.png" alt="Increase Photo Size"/>
-                <img id="next" class="twoRems displayNone" src="images/next.png" alt="Next Photo"/>
             </figure>
         </header>
 @endpush
