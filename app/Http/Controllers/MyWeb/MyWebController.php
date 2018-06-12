@@ -20,7 +20,6 @@ class MyWebController extends Controller
     # Send an Email message
     public function sendAnE_Mail(Request $request)
     {
-      return Utility::processSendMail($request['toMailAddress'], $request['ccMailAddress'], $request['bccMailAddress'],
-          $request['fromMailAddress'], $request['mailMessage']);
+      return Utility::processSendMail($request['toMailAddress'], $request['mailMessage']);
     }
 }
