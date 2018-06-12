@@ -23,7 +23,7 @@ class Utility
          */
 
         // mail(to,subject,message,headers,parameters);
-        $headers = "From: " . $fromMailAddress . "\r\n" .
+        $headers = "From: mferten@mfeweb.com\r\n" .
                    "CC: mferten@mfeweb.com" . "\r\n";
 
         mail($toMailAddress,"A User Opinion is Sent MyWebBench.com",$mailMessage, $headers);

@@ -192,7 +192,6 @@ function processSendMail()
         };
         xhttpLogin.open("POST", "ajax/sendAnE_Mail", true);
         xhttpLogin.setRequestHeader('X-CSRF-TOKEN', document.getElementsByName('csrf-token')[0].getAttribute('content'));
-        console.log(formLoginData);
         xhttpLogin.send(formLoginData);
     }
 }
