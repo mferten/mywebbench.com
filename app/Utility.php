@@ -26,7 +26,7 @@ class Utility
         $headers = "From: mferten@mfeweb.com\r\n" .
                    "CC: mferten@mfeweb.com" . "\r\n";
 
-        mail($toMailAddress,"A User Opinion is Sent MyWebBench.com",$mailMessage, $headers);
+        mail($toMailAddress,"a User Opinion is Sent from MyWebBench.com",$mailMessage, $headers);
     }
 
 } # end of class
