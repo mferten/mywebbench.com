@@ -121,9 +121,14 @@ p {
 	background: url(/images/pdf.gif) no-repeat right;
 }
 
-.twoRems {
+.threeRems {
     width: 3rem;
     height: 3rem;
+}
+
+.emailIconSize {
+    width: 1.9rem;
+    height: 1.9rem;
 }
 
 .harvard {
