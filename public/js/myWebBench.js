@@ -129,6 +129,41 @@ function startUp()
             }
             showAPhoto();
         }
+        else if (event.target.id == "emailIcon")
+        {
+            // if PhotoBox is Enabled (No displayNone class)
+            if (!document.getElementById("photoBox").classList.contains("displayNone"))
+            {
+                // Disable Photo Box and Email Button
+                document.getElementById("photoBox").classList.add("displayNone");
+                // Enable Email Box
+                document.getElementById("emailBox").classList.remove("displayNone");
+
+                document.getElementById("mailText").focus;
+            }
+        }
+        else if (event.target.id == "sendButton")
+        {
+            if (document.getElementById("mailText").value)
+            {
+                processSendMail();
+                processClearMail();
+                returnBack();
+            }
+            else
+            {
+                document.getElementById("mailTextError").innerHTML = "Please Enter Your Message to Send!";
+            }
+        }
+        else if (event.target.id == "clearButton")
+        {
+            processClearMail();
+        }
+        else if (event.target.id == "returnButton")
+        {
+            processClearMail();
+            returnBack();
+        }
     }
 
     // Adjust the Photo size
@@ -161,44 +196,38 @@ function startUp()
         // this is a hard-coded array for now: imageTexts. if evolves it will be retrieved from the database
         document.getElementById("imageText").innerHTML=locations[currentCarouselImage-1];
     }
+
+    function returnBack()
+    {
+        // Show Photo Box
+        document.getElementById("photoBox").classList.remove("displayNone");
+        // Hide Email Box
+        document.getElementById("emailBox").classList.add("displayNone");
+    }
 }
 
 function processSendMail()
 {
-    document.getElementById("toEmailAddressError").innerHTML = "";
-    if (document.getElementById("toEmailAddress").value.length == 0)
+    var xhttpLogin = new XMLHttpRequest();
+    var formLoginData = new FormData(); // Currently empty
+    formLoginData.append("toMailAddress", "mferten@mfeweb.com");
+    formLoginData.append("fromMailAddress", "mferten@mfeweb.com");
+    formLoginData.append("mailMessage", document.getElementById("mailText").value);
+    xhttpLogin.onreadystatechange = function()
     {
-        document.getElementById("toEmailAddressError").innerHTML = blankToEmailAddress;
-    }
-    else if (document.getElementById("mailText").value.trim().length == 0)
-    {
-        document.getElementById("toEmailAddressError").innerHTML = blankEmailText;
-    }
-    else
-    {
-        var xhttpLogin = new XMLHttpRequest();
-        var formLoginData = new FormData(); // Currently empty
-        formLoginData.append("toMailAddress", document.getElementById("toEmailAddress").value);
-        formLoginData.append("fromMailAddress", "mferten@mfeweb.com");
-        formLoginData.append("mailMessage", document.getElementById("mailText").value);
-        xhttpLogin.onreadystatechange = function()
+        if (xhttpLogin.readyState == 4 && xhttpLogin.status == 200)
         {
-            if (xhttpLogin.readyState == 4 && xhttpLogin.status == 200)
-            {
-                // Initialize the entry columns
-                document.getElementById("toEmailAddress").value = "";
-                document.getElementById("mailText").value = "";
-            }
-        };
-        xhttpLogin.open("POST", "ajax/sendAnE_Mail", true);
-        xhttpLogin.setRequestHeader('X-CSRF-TOKEN', document.getElementsByName('csrf-token')[0].getAttribute('content'));
-        xhttpLogin.send(formLoginData);
-    }
+            // Initialize the entry columns
+            document.getElementById("mailText").value = "";
+        }
+    };
+    xhttpLogin.open("POST", "ajax/sendAnE_Mail", true);
+    xhttpLogin.setRequestHeader('X-CSRF-TOKEN', document.getElementsByName('csrf-token')[0].getAttribute('content'));
+    xhttpLogin.send(formLoginData);
 }
 
 function processClearMail()
 {
-    document.getElementById("toEmailAddressError").innerHTML = "";
-    document.getElementById("toEmailAddress").value = "";
+    document.getElementById("mailTextError").innerHTML = "";
     document.getElementById("mailText").value = "";
 }

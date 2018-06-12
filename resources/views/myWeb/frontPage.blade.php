@@ -3,7 +3,8 @@
 <!-- place holder -->
         <header>
             <h1>Let's Make USVI St. Thomas A Cheerful Paradise <a class="harvard" href="docs/whyCheerfulParadise.jpg" target="_blank">How?&nbsp;</a></h1>
-            <figure>
+            <!-- Photos -->
+            <figure id="photoBox">
                 <img id="previous" class="threeRems displayNone" src="images/previous.png" alt="Previous Photo"/>
                 <img id="decrease" class="threeRems displayType" src="images/decrease.png" alt="Decrease Photo Size"/>
                 <img id="startOrStop" class="threeRems" src="images/pause.png" alt="Stop Carousel"/>
@@ -14,6 +15,17 @@
                     <img id="picture" class="img20 aPng" src="images/IMG1.JPG"
                         alt="St. Thomas Photo"/>
                 </a>
+            </figure>
+            <!-- User Opinion -->
+            <figure id="emailBox" class="displayNone">
+                <img id="sendButton" class="threeRems" src="images/sendMail.jpg" alt="Send"/>
+                <img id="clearButton" class="threeRems" src="images/clear.jpg" alt="Clear"/>
+                <img id="returnButton" class="threeRems" src="images/return.jpg" alt="Return"/>
+                <form id="SendMailModule" method="post">
+                    <label for="mailText"><figcaption class='harvard'>Please Enter Your Opinion</figcaption></label>
+                    <textarea class="img20 aPng" id="mailText" rows="15" cols="50"></textarea>
+                    <p id="mailTextError" class="error">&nbsp;</p>
+                </form>
             </figure>
         </header>
 @endpush

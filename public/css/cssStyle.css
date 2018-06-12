@@ -44,7 +44,7 @@ body {
     background-color: #190623;
 }
 
-a, h1, footer {
+a, h1, h2, footer {
     color: #EA4CA5;
     text-align: center;
     font-weight: bold;
@@ -173,6 +173,14 @@ p {
 
 .displayNone {
     display: none;
+}
+
+.error {
+    color: red;
+}
+
+#mailText {
+    background-color: #ffc;
 }
 
 /* responsive design values */
