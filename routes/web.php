@@ -13,3 +13,6 @@
 
 # MFE (my) Main Site Front Page
 Route::get('/', 'MyWeb\MyWebController@index');
+
+# Ajax call to send an Email
+Route::post('/ajax/sendAnE_Mail', 'MyWeb\MyWebController@sendAnE_Mail');

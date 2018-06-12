@@ -161,5 +161,45 @@ function startUp()
         // this is a hard-coded array for now: imageTexts. if evolves it will be retrieved from the database
         document.getElementById("imageText").innerHTML=locations[currentCarouselImage-1];
     }
+}
 
+function processSendMail()
+{
+    document.getElementById("toEmailAddressError").innerHTML = "";
+    if (document.getElementById("toEmailAddress").value.length == 0)
+    {
+        document.getElementById("toEmailAddressError").innerHTML = blankToEmailAddress;
+    }
+    else if (document.getElementById("mailText").value.trim().length == 0)
+    {
+        document.getElementById("toEmailAddressError").innerHTML = blankEmailText;
+    }
+    else
+    {
+        var xhttpLogin = new XMLHttpRequest();
+        var formLoginData = new FormData(); // Currently empty
+        formLoginData.append("toMailAddress", document.getElementById("toEmailAddress").value);
+        formLoginData.append("fromMailAddress", "mferten@mfeweb.com");
+        formLoginData.append("mailMessage", document.getElementById("mailText").value);
+        xhttpLogin.onreadystatechange = function()
+        {
+            if (xhttpLogin.readyState == 4 && xhttpLogin.status == 200)
+            {
+                // Initialize the entry columns
+                document.getElementById("toEmailAddress").value = "";
+                document.getElementById("mailText").value = "";
+            }
+        };
+        xhttpLogin.open("POST", "ajax/sendAnE_Mail", true);
+        xhttpLogin.setRequestHeader('X-CSRF-TOKEN', document.getElementsByName('csrf-token')[0].getAttribute('content'));
+        console.log(formLoginData);
+        xhttpLogin.send(formLoginData);
+    }
+}
+
+function processClearMail()
+{
+    document.getElementById("toEmailAddressError").innerHTML = "";
+    document.getElementById("toEmailAddress").value = "";
+    document.getElementById("mailText").value = "";
 }

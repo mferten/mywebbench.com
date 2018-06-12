@@ -34,6 +34,28 @@
                 </ul>
             </nav>
             <span>&copy; {{ date('Y') }} Mehmet F Erten</span>
+            <h1>Your Opinion</h1>
+            <form id="SendMailModule" method="post">
+                <legend><b id="sendAMailText" style="color:red;">Send an E-Mail:</b></legend>
+            	  <br/>
+            	  <b id="toEMailAddressText">To Email Address: </b><br/>
+            	  <input id="toEmailAddress" name="toEmailAddress" type="text" value="mferten@mfeweb.com" disabled>
+        	       <span id="toEmailAddressError"></span>
+            	  <br/>
+        	      <br/>
+        	      <b id="toMailTextText">Mail Text:</b><br/>
+                <textarea id="mailText" rows="15" cols="50"></textarea>
+        	      <span id="mailTextError" class="error"></span>
+            	  <br/>
+        	      <br/>
+            	  <button  class="buttonDefaults" id="sendButton" type="button" onclick="processSendMail()">Send</button>
+                <button  class="buttonDefaults" id="clearButton" type="button" onclick="processClearMail()">Clear</button>
+        		    <br/>
+        		    <p id="fromEmailText"></p>
+        		    <p id="sendAMailMessageText">A copy of this E-Mail will be <b sytle="color:red">"Cc"</b> to "mfeweb.com"</p>
+        		    <br/>
+            </form>
+
         </footer>
         @stack('jsFiles')
     </body>

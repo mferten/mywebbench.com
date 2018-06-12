@@ -4,6 +4,7 @@ namespace App\Http\Controllers\MyWeb;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Utility;
 
 class MyWebController extends Controller
 {
@@ -14,5 +15,12 @@ class MyWebController extends Controller
     {
         // Validation is done in JS
         return view('myWeb.frontPage');
+    }
+
+    # Send an Email message
+    public function sendAnE_Mail(Request $request)
+    {
+      return Utility::processSendMail($request['toMailAddress'], $request['ccMailAddress'], $request['bccMailAddress'],
+          $request['fromMailAddress'], $request['mailMessage']);
     }
 }
