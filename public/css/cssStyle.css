@@ -50,7 +50,7 @@ a, h1, footer {
     font-weight: bold;
 }
 
-a {
+h1, a {
     font-family: 'Kaushan Script', cursive;
 }
 
