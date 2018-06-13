@@ -129,7 +129,7 @@ function startUp()
             }
             showAPhoto();
         }
-        else if (event.target.id == "emailIcon")
+        else if (event.target.id == "emailIcon" || event.target.id == "emailAnchor")
         {
             // if PhotoBox is Enabled (No displayNone class)
             if (!document.getElementById("photoBox").classList.contains("displayNone"))
