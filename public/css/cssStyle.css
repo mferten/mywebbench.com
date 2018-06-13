@@ -92,7 +92,7 @@ figure a:hover {
     box-shadow: .1rem .3rem .5rem .2rem #eab358;
 }
 
-figcaption {
+figcaption, .mailTextCaption {
     font-size: 1rem;
     font-weight: bold;
     margin: .2rem 0;

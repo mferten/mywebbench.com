@@ -22,9 +22,9 @@
                 <img id="clearButton" class="threeRems" src="images/clear.jpg" alt="Clear"/>
                 <img id="returnButton" class="threeRems" src="images/return.jpg" alt="Return"/>
                 <form id="SendMailModule" method="post">
-                    <label for="mailText"><figcaption class='harvard'>Please Enter Your Opinion</figcaption></label>
+                    <label for="mailText"><p class='harvard mailTextCaption'>Please Enter Your Opinion</p></label>
                     <textarea class="img20 aPng" id="mailText" rows="15" cols="50"></textarea>
-                    <p id="mailTextError" class="error">&nbsp;</p>
+                    <p id="mailTextError" class="error"></p>
                 </form>
             </figure>
         </header>
