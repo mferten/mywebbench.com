@@ -141,6 +141,13 @@ function startUp()
 
                 document.getElementById("mailText").focus;
             }
+            else // reverse back to the main page
+            {
+                // Disable Photo Box and Email Button
+                document.getElementById("photoBox").classList.remove("displayNone");
+                // Enable Email Box
+                document.getElementById("emailBox").classList.add("displayNone");
+            }
         }
         else if (event.target.id == "sendButton")
         {
