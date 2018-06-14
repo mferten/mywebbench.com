@@ -29,7 +29,7 @@
                 <ul class="ulListStyle">
                     <li>
                         <a class='harvard' href="https://www.mfeweb.com" target="_blank">&nbsp;M.F.E Sites&nbsp;</a>
-                        <a id="emailAnchor" class='harvard'>Your Opinion&nbsp;<img id="emailIcon" class="emailIconSize" src="images/email.png" alt="User's Opinion"/></a>
+                        <a class='harvard' id="emailAnchor">&nbsp;&nbsp;&nbsp;&nbsp;<img id="emailIcon" class="emailIconSize" src="images/email.png" alt="User's Opinion"/>Your Opinion&nbsp;</a>
                     </li>
                 </ul>
             </nav>
