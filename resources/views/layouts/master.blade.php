@@ -16,7 +16,7 @@
         <meta name="author" content="Mehmet Fatih Erten">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         {{-- Title --}}
-        <title>@yield('title', 'Time To Make USVI St. Thomas A Cheerful Paradise')</title>
+        <title>@yield('title', 'Time To Make USVI St. Thomas A Cheerful Paradise, An American Wakanda!')</title>
     </head>
     <body class="gridBox">
         {{-- header --}}

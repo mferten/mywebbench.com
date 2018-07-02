@@ -2,14 +2,20 @@
 @push('header')
 <!-- place holder -->
         <header>
-            <h1>Can We Make USVI St. Thomas a True Paradise?<a class="harvard" href="docs/whyCheerfulParadise.pdf" target="_blank"> Yes, We Can!&nbsp;</a></h1>
+            <h1>Time to Make St. Thomas USVI a Paradise</h1>
+                <h2>
+                    <a class="harvard" href="docs/whyCheerfulParadise.pdf" target="_blank">
+                        An American Wakanda!&nbsp;
+                    </a>
+                </h2>
+                
             <!-- Photos -->
             <figure id="photoBox">
-                <img id="previous" class="iconSize displayNone" src="images/previous.png" alt="Previous Photo" title="Previous Photo"/>
-                <img id="decrease" class="iconSize displayType" src="images/decrease.png" alt="Decrease Photo Size" title="Decrease Photo Size"/>
+                <img id="previous" class="iconSize displayNone" src="images/previous.png" alt="One Back" title="Previous Photo"/>
+                <img id="decrease" class="iconSize displayType" src="images/decrease.png" alt="Smaller Photo Size" title="Decrease Photo Size"/>
                 <img id="startOrStop" class="iconSize" src="images/pause.png" alt="Stop Carousel" title="Stop Photo Carousel"/>
-                <img id="increase" class="iconSize displayType" src="images/increase.png" alt="Increase Photo Size" title="Increase Photo Size"/>
-                <img id="next" class="iconSize displayNone" src="images/next.png" alt="Next Photo" title="Next Photo"/>
+                <img id="increase" class="iconSize displayType" src="images/increase.png" alt="Larger Photo Size" title="Increase Photo Size"/>
+                <img id="next" class="iconSize displayNone" src="images/next.png" alt="Next One" title="Next Photo"/>
                 <figcaption id="imageText" class="harvard">Where is this place and why it is special?</figcaption>
                 <a id="pictureA" href="images/IMG1.JPG" target="_blank">
                     <img id="picture" class="img20 aPng" src="images/IMG1.JPG"
