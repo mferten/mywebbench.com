@@ -2,13 +2,13 @@
 @push('header')
 <!-- place holder -->
         <header>
-            <h1>Time to Make St. Thomas USVI a Paradise</h1>
+            <h1>Time to Make An American Wakanda from St. Thomas USVI</h1>
                 <h2>
                     <a class="harvard" href="docs/whyCheerfulParadise.pdf" target="_blank">
-                        An American Wakanda!&nbsp;
+                        An African American Paradise!&nbsp;
                     </a>
                 </h2>
-                
+
             <!-- Photos -->
             <figure id="photoBox">
                 <img id="previous" class="iconSize displayNone" src="images/previous.png" alt="One Back" title="Previous Photo"/>

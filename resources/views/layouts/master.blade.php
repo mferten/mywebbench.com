@@ -12,7 +12,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="USVI St. Thomas is Gloomy, a Cheerless Paradise">
-        <meta name="keywords" content="How to make USVI St. Thomas a Cheerful Paradise?">
+        <meta name="keywords" content="Time to Make An American Wakanda from St. Thomas USVI">
         <meta name="author" content="Mehmet Fatih Erten">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         {{-- Title --}}
