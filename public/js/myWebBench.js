@@ -37,6 +37,7 @@ function startUp()
                       "Crown Bay Dock",
                       "Water Island, Airport and Crown Bay Dock",
                       "Water Island and Crown Bay Dock"];
+                      "Marriott Frenchmen's Cove"];
     var imageTexts = [];
     this.addEventListener("click", clickEvents, false);
     // image count
@@ -50,7 +51,7 @@ function startUp()
     function setCarouselImage()
     {
         // if the last one, loop from the first one
-        if (currentCarouselImage == 27) // *** This will be updated anytime a new photo added
+        if (currentCarouselImage == 29) // *** This will be updated anytime a new photo added
         {
             currentCarouselImage = 1; // array starts with 0
         }
@@ -106,7 +107,7 @@ function startUp()
         else if (event.target.id == "next")
         {
             // go to the next Photo: ++ if the last one start again 1
-            if (currentCarouselImage == 27) // *** This will be updated anytime a new photo added
+            if (currentCarouselImage == 29) // *** This will be updated anytime a new photo added
             {
                 currentCarouselImage = 1; // array starts with 0
             }
@@ -118,10 +119,10 @@ function startUp()
         }
         else if (event.target.id == "previous")
         {
-            // go to the previous Photo: -- if the First one, go to the last 27
+            // go to the previous Photo: -- if the First one, go to the last 28
             if (currentCarouselImage == 1) // *** This will be updated anytime a new photo added
             {
-                currentCarouselImage = 27; // array starts with 0
+                currentCarouselImage = 29; // array starts with 0
             }
             else
             {
