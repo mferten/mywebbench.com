@@ -36,7 +36,7 @@ function startUp()
                       "Paradise Point",
                       "Crown Bay Dock",
                       "Water Island, Airport and Crown Bay Dock",
-                      "Water Island and Crown Bay Dock";
+                      "Water Island and Crown Bay Dock",
                       "Marriott Frenchmen's Cove"];
     var imageTexts = [];
     this.addEventListener("click", clickEvents, false);
