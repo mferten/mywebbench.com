@@ -2,10 +2,10 @@
 @push('header')
 <!-- place holder -->
         <header>
-            <h1>Time to Make An American Wakanda from St. Thomas USVI</h1>
+            <h1>Time to Make An American Wakanda</h1>
                 <h2>
                     <a class="harvard" href="docs/whyCheerfulParadise.pdf" target="_blank">
-                        An African American Paradise!&nbsp;
+                        from St. Thomas USVI: An African American Paradise!&nbsp;
                     </a>
                 </h2>
 
